@@ -1,0 +1,18 @@
+version: '3.0'
+
+services:
+  mongo:
+    env_file: env_debug.env
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    env_file: env_debug.env
+
+  telegram_bot:
+    env_file: env_debug.env
+    stdin_open: true
+    tty: true
+
