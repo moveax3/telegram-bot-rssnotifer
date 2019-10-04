@@ -1,0 +1,6 @@
+env_debug.env
+env_prod.env
+logs/*
+mongo/data/db
+__pycache__/*
+.DS_Store
