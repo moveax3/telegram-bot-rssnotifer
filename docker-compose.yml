@@ -4,8 +4,6 @@ services:
   mongo:
     image: mongo:latest
     restart: always
-    ports:
-      - 27017:27017
     env_file: env_prod.env
     volumes:
       - ./mongo/data/db:/data/db
@@ -15,5 +13,14 @@ services:
     volumes:
       - ./telegram_bot:/usr/src/app
       - ./logs:/logs
-    command: python3 main.py
+    command: python3 bot.py
     env_file: env_prod.env
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8081:8081
+    env_file: env_prod.env
+
+

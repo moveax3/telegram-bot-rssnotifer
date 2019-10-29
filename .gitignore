@@ -3,4 +3,5 @@ env_prod.env
 logs/*
 mongo/data/db
 __pycache__/*
+telegram_bot/__pycache__/*
 .DS_Store

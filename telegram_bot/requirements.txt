@@ -3,4 +3,4 @@ pymongo
 feedparser
 ipdb
 coloredlogs
-python-telegram-bot
+aiogram
